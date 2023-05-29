@@ -59,12 +59,11 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences login = getSharedPreferences("Login",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = login.edit();
 
-        editor.putString("name","");
-        editor.putString("id","");
-        editor.putInt("age",0);
+        editor.putString("nombre","");
+        editor.putString("cedula","");
         editor.putString("user","");
-        editor.putString("password","");
-        editor.putString("userType","");
+        editor.putString("pass","");
+        editor.putString("tipoUser","");
 
         editor.commit();
 
