@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        android:id="@+id/img"
+        android:src="@drawable/user"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:id="@+id/txtEventoNombre"
+        android:text="a"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Cedula"
+            android:text="1"
+            android:id="@+id/txtCedula"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:id="@+id/txtUsuario"
+        android:text="admin"
+        android:layout_alignBottom="@+id/txtUsusario"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:text="password"
+        android:layout_alignBottom="@+id/txtUsusario"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/rbgTipoUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/rbtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Usuario">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/rbtAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Administrador">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/btnRegistrar"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:onClick="GuardarPersona"
+        />
+
+</LinearLayout>

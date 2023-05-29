@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/imgIcono"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/imgIcono"
+        android:id="@+id/layoutEventoInfo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/txtEventoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="Evento de Navidad"/>
+
+        <TextView
+            android:id="@+id/txtEventoLugar"
+            android:layout_marginRight="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEventoNombre"
+            android:textSize="15sp"
+            android:text="Parque Omar, Lugar Especifico"/>
+
+        <TextView
+            android:id="@+id/txtEventoFechaHora"
+            android:layout_below="@id/txtEventoLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#888888"
+            android:text="24/12/2023 4:00 PM"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
